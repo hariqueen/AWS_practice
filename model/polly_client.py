@@ -1,5 +1,7 @@
 import boto3
-from config import AWS_REGION, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
+from model.config import AWS_REGION, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
+
+__all__ = ["create_polly_clien"]
 
 def create_polly_client():
     return boto3.client('polly', 

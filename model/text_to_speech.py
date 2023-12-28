@@ -1,5 +1,7 @@
 import os
 
+__all__ = ["synthesize_speech", "save_speech"]
+
 def synthesize_speech(polly_client, text, voice_id='Danielle', engine='long-form', output_format='mp3'):
     return polly_client.synthesize_speech(VoiceId=voice_id,
                                           Engine=engine,
